@@ -8,6 +8,10 @@ function App() {
   const [longetude, setLongetude] = useState(0.1278);
   const [latitude, setLatitude] = useState(51.5074);
 
+  useEffect(() => {
+    getLocation();
+  }, []);
+
   const getLocation = async () => {
     SetLoading(true);
   };
