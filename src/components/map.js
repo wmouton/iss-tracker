@@ -12,7 +12,13 @@ const Map = ({ center, zoom }) => {
         defaultCenter={center}
         defaultZoom={zoom}
       >
-          <img src={iss} alt="iss" className='iss-icon' />
+        <img
+          src={iss}
+          alt='iss'
+          className='iss-icon'
+          lat={center.lat}
+          lng={center.lng}
+        />
       </GoogleMapReact>
     </div>
   );
