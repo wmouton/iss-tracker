@@ -1,11 +1,10 @@
 import './App.css';
+import Map from './components/map';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>International Space Station Tracker</h1>
-      </header>
+    <div className='App'>
+      <Map/>
     </div>
   );
 }
